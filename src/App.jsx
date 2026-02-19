@@ -7,8 +7,10 @@ import "./App.css";
 function App() {
   return (
     <Router>
+
       <div className="landing-page">
         <h1>Paradise Nursery</h1>
+
         <Link to="/plants">
           <button>Get Started</button>
         </Link>
@@ -19,6 +21,7 @@ function App() {
         <Route path="/cart" element={<CartItem />} />
         <Route path="/about" element={<AboutUs />} />
       </Routes>
+
     </Router>
   );
 }
